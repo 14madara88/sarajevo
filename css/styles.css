@@ -323,11 +323,6 @@ nav {
 
 /* ########## Media ########## */
 @media (max-width: 800px) {
-  ::-webkit-scrollbar {
-    width: 6px;
-    background: #5a5b5f; }
-  body {
-    overflow: visible; }
   nav {
     padding-top: 20px;
     padding-bottom: 20px;

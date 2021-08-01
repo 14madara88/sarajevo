@@ -155,7 +155,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   z-index: 5;
-  background: url("../img/body/block_1/nav-bg.png") calc(100% - calc(calc(99 / 1170 * 100%) + calc(((103px + 63 * ((100vw - 320px) / 1600))) * 3.43 - 1px))) 0/100% no-repeat, url("../img/body/block_1/nav-bg.png") 100% 0/calc(99 / 1170 * 100%) 100% no-repeat; }
+  background: url("../img/body/block_1/nav-bg.png") calc(100% - calc(calc(99 / 1170 * 100%) + calc(((105px + 65 * ((100vw - 320px) / 1600))) * 3.347))) 0/100% no-repeat, url("../img/body/block_1/nav-bg.png") 100% 0/calc(99 / 1170 * 100%) 100% no-repeat; }
 
 .nav__search {
   -webkit-box-flex: 1;
@@ -227,7 +227,7 @@ nav {
   .nav__anchor#team {
     right: calc(calc(99 / 1170 * 100%) + calc(((40px + 15 * ((100vw - 320px) / 1600)) + 30px) * 1.15)); }
   .nav__anchor#contact {
-    right: calc(calc(99 / 1170 * 100%) + calc(((40px + 15 * ((100vw - 320px) / 1600)) + 30px) * 0.001)); }
+    right: calc(calc(99 / 1170 * 100%) + calc(((40px + 15 * ((100vw - 320px) / 1600)) + 30px) * 0.00001)); }
   .nav__anchor:before {
     content: '';
     display: block;

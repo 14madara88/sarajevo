@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="29pt" height="29pt" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" style="width: 29px;height: 29px;">
+<g id="#fafafafa">
+<path fill="#fafafa" opacity="0.98" d=" M 5.43 14.02 C 9.66 7.55 19.37 7.40 23.57 13.98 C 19.34 20.45 9.63 20.60 5.43 14.02 M 10.44 14.00 C 12.64 17.56 16.36 17.56 18.56 14.00 C 16.36 10.44 12.64 10.44 10.44 14.00 Z"/>
+<path fill="#fafafa" opacity="0.98" d=" M 13.31 13.19 C 14.30 11.73 16.86 13.34 15.69 14.81 C 14.70 16.27 12.14 14.66 13.31 13.19 Z"/>
+</g>
+  <circle xmlns="http://www.w3.org/2000/svg" style="fill: none;stroke-width: 1px;stroke: #fff;/*! width: 29px; *//*! height: 29px; */" r="13.5" cx="14" cy="14"/>
+</svg>

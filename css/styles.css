@@ -125,6 +125,7 @@ body {
     width: 229px;
     height: 14px;
     background: url("../img/body/block_header_icon.png");
+    opacity: 0.2;
     margin-top: 32px; }
 
 .subtitle {
@@ -155,7 +156,15 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   z-index: 5;
-  background: url("../img/body/block_1/nav-bg.png") calc(100% - calc(calc(99 / 1170 * 100%) + calc(((105px + 65 * ((100vw - 320px) / 1600))) * 3.347))) 0/100% no-repeat, url("../img/body/block_1/nav-bg.png") 100% 0/calc(99 / 1170 * 100%) 100% no-repeat; }
+  background: url("../img/footer&header/nav-bg.png") calc(100% - calc(calc(99 / 1170 * 100%) + calc(((105px + 65 * ((100vw - 320px) / 1600))) * 3.34))) 0/100% no-repeat, url("../img/footer&header/nav-bg.png") 100% 0/calc(99 / 1170 * 100%) 100% no-repeat; }
+
+.nav__menu {
+  background: #101636;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(96%, rgba(16, 22, 54, 0.9)), to(rgba(16, 22, 54, 0.15)));
+  background: -webkit-linear-gradient(bottom, rgba(16, 22, 54, 0.9) 96%, rgba(16, 22, 54, 0.15) 100%);
+  background: -o-linear-gradient(bottom, rgba(16, 22, 54, 0.9) 96%, rgba(16, 22, 54, 0.15) 100%);
+  background: linear-gradient(0deg, rgba(16, 22, 54, 0.9) 96%, rgba(16, 22, 54, 0.15) 100%);
+  mix-blend-mode: screen; }
 
 .nav__search {
   -webkit-box-flex: 1;
@@ -182,13 +191,6 @@ nav {
     font-weight: 100;
     letter-spacing: 0.05em;
     font-style: italic; }
-
-.nav__menu {
-  background: #101636;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(96%, rgba(16, 22, 54, 0.9)), to(rgba(16, 22, 54, 0.15)));
-  background: -webkit-linear-gradient(bottom, rgba(16, 22, 54, 0.9) 96%, rgba(16, 22, 54, 0.15) 100%);
-  background: -o-linear-gradient(bottom, rgba(16, 22, 54, 0.9) 96%, rgba(16, 22, 54, 0.15) 100%);
-  background: linear-gradient(0deg, rgba(16, 22, 54, 0.9) 96%, rgba(16, 22, 54, 0.15) 100%); }
 
 .nav__link {
   padding: 20px 0;
@@ -244,7 +246,7 @@ nav {
   top: 0;
   right: calc(99 / 1170 * 100%);
   width: calc(((40px + 15 * ((100vw - 320px) / 1600)) + 30px) * 4.8);
-  height: 2px;
+  height: 1em;
   z-index: 7;
   background: #fff; }
   .nav__bg-overlay#overlay1 {
@@ -397,7 +399,10 @@ nav {
 .block2__content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .block2__sec2-text-carder {
   display: -webkit-box;
@@ -529,6 +534,12 @@ nav {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 85px; }
+  .block3__tabs-content div a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%; }
   .block3__tabs-content div {
     position: relative;
     -webkit-box-flex: 1;
@@ -542,7 +553,7 @@ nav {
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
-    .block3__tabs-content div:after, .block3__tabs-content div:before {
+    .block3__tabs-content div a:after, .block3__tabs-content div a:before {
       display: block;
       padding-top: 40%;
       position: absolute;
@@ -554,13 +565,13 @@ nav {
       -webkit-transition: all 0.3s ease 0.3s;
       -o-transition: all 0.3s ease 0.3s;
       transition: all 0.3s ease 0.3s; }
-    .block3__tabs-content div:after {
+    .block3__tabs-content div a:after {
       white-space: pre;
       font-family: 'Open Sans';
       color: #fff;
       font-size: calc(10px + 4 * ((100vw - 320px) / 1600));
       font-weight: 400; }
-    .block3__tabs-content div:before {
+    .block3__tabs-content div a:before {
       background: url("../img/body/block_3/eye_icon.svg") 50% 35%/calc(29/294*100%) calc(29/220*100%) no-repeat, rgba(76, 118, 255, 0.9);
       content: "Labore et dolore magnam";
       white-space: pre;
@@ -568,19 +579,21 @@ nav {
       color: #fff;
       font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
       font-weight: 700; }
-    .block3__tabs-content div:hover:after, .block3__tabs-content div:hover:before {
+    .block3__tabs-content div a:hover:after, .block3__tabs-content div a:hover:before {
       opacity: 1; }
+      .block3__tabs-content div a:hover:after:active, .block3__tabs-content div a:hover:before:active {
+        display: none; }
 
-.branding:after {
+.branding a:after {
   content: "\a\a\a Branding"; }
 
-.web:after {
+.web a:after {
   content: "\a\a\a Web"; }
 
-.logo_design:after {
+.logo_design a:after {
   content: "\a\a\a Logo Design"; }
 
-.photography:after {
+.photography a:after {
   content: "\a\a\a Photography"; }
 
 #all:checked + label {
@@ -733,6 +746,46 @@ nav {
 
 /* Block5 */
 .block5 {
+  text-align: center;
+  background: url("../img/body/block_5/bg.jpg") 0 0/cover no-repeat;
+  padding: 75px 0 118px; }
+
+.block5__title {
+  font-size: calc(21px + 8 * ((100vw - 320px) / 1600)); }
+  .block5__title:after {
+    opacity: 1;
+    -webkit-filter: invert(1);
+    filter: invert(1); }
+
+.block5__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 75%;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.block5__img {
+  width: 100px;
+  height: 100px; }
+
+.block5__fact-text {
+  font-family: 'Open Sans';
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff; }
+  .block5__fact-text span {
+    font-size: calc(45px + 4 * ((100vw - 320px) / 1600));
+    font-weight: 600; }
+
+/* Block6 */
+.block6 {
   position: relative;
   z-index: 0;
   background: #fff;
@@ -896,9 +949,11 @@ nav {
       margin-bottom: 50px; } }
 
 @media (max-width: 600px) {
+  /* nav */
   .nav__link {
     text-align: center;
     padding-right: 0; }
+  /* block2 */
   .block2__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -920,10 +975,18 @@ nav {
     opacity: 1; }
   .block2__sec2-text-carder .block2__text-card {
     margin: 50px 0 0; }
+  /* block4 */
   .block4__card {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 70%;
     flex: 0 1 70%; }
   .block4__hoverinfo p {
     max-height: 3.50427em;
-    overflow-y: scroll; } }
+    overflow-y: scroll; }
+  /* block5 */
+  .block5__fact {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%; }
+    .block5__fact:not(.block5__fact:last-child) {
+      margin-bottom: 30px; } }
